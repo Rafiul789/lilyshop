@@ -25,8 +25,8 @@ const Header = () => {
   <span className="navigation-itemOne">Your</span>
 <span className="navigation-itemTwo">Shop</span>
   </div>
-  <div className="navigation-item">
-  <ShoppingCartIcon className="cart-item"  fontSize="large" />
+  <div className="cart-item">
+  <ShoppingCartIcon   fontSize="large" />
 <span className="navigation-itemTwo cart-count ">0</span>
   </div>
 </div>
