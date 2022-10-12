@@ -2,25 +2,26 @@
 import './App.css';
 import Header from './Component/Header/Header';
 import Home from './Component/Home/Home';
-import {BrowserRouter as Router,Route,Switch} from  'react-router-dom';
+import {BrowserRouter,Routes,Route} from  'react-router-dom';
 import Checkout from './Component/Checkout/Checkout';
 function App() {
   return (
     <div >
-      <Router>
-<Switch>
-  <Route path='/checkout' >
-<Header></Header>
-<Checkout></Checkout>
+      <BrowserRouter>
+      <Header></Header>
+      <Routes>
+
+  <Route path='/checkout' element={<Checkout />}>
   </Route>
-<Route path='/'>
-<Home></Home>
+<Route path='/' element={<Home />}>
+
 </Route>
 
-</Switch>
-
-      </Router>
+      </Routes>
   
+      
+      </BrowserRouter>
+      
    
     </div>
   );
