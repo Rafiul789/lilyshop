@@ -1,4 +1,5 @@
 import React from 'react';
+import CheckoutProduct from '../CheckoutProduct/CheckoutProduct';
 import './Checkout.css'
 const Checkout = () => {
     return (
@@ -7,6 +8,7 @@ const Checkout = () => {
 
 <h2 className="checkout-title">Your Cart</h2>
 
+<CheckoutProduct></CheckoutProduct>
            </div>
 <div className="checkout-right">
 
